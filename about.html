@@ -3,53 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>My Portfolio</title>
     
 </head>
 <body>
     <header>
-        <div>
-            <img src="assets/logo.png" alt="this is the logo" width="100" height="100" >
-        </div>
-        <nav>
-            <ul>
+        <nav class="nav-items">
+            <ul class="nav-items">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <img src="assets/myphoto.jpg" alt="My Photo">
-        <h1>About me </h1>
+    <section >
+        
+       <div>
+        <h2>About me </h2>
+        <img src="assets/thabang.jpg" alt="My Photo" width="100" height="100px" />
         <p>Entry-level Java Developer with a background in software development and full-stack development. Recently earned the Amazon Java Programming Certificate, with hands-on lab experience gaining expertise in Java, Spring boot and Web Development. Passionate about writing clean, efficient code and collaborating in an agile environment</p>
+       </div>
         <hr>
         <h2>My interest</h2>
-        <ul>
+        <div class="interest">
+            <ul>
                 <li>Cooking</li>
                 <li>Learning new skills</li>
                 <li>Music</li>
             </ul>
+        </div>
+        
             <hr>
 
             <h2>Bucket list</h2>
         <table>
             <tr>
-              <th>Go to cape town</th>
-              <th>Getting married</th>
-              <th>Mountain hiking</th>
-              <th>Visiting China</th>
-            </tr>
+                <th>Item</th>
+                <th>Reason</th>
+                <th>Status</th>
+               
+              </tr>
             <tr>
+              <td>Visit Cape Town</td>
               <td>I wanna experince the strong winds of cape town and the weather there</td>
-              <td>This is my primary goal to attend my own wedding someday</td>
-              <td>I love Mountains I believe its a peace and spiritual awakening</td>
-              <td>Oneo f the finest developed countries with amazing infrastructure I wanna exerience the China</td>
+              <td>Not started</td>
+             
+             
+              
             </tr>
             <tr>
-              <td>Not started</td>
+                <td>Getting married</td>
+              <td>This is my primary goal to attend my own wedding someday</td>
               <td>In progress</td>
-              <td>Not started</td>
+              
+             
+            </tr>
+            <tr>
+                <td>Mountain hiking</td>
+             <td>I love Mountains I believe its a peace and spiritual awakening</td>
               <td>Not started</td>
             </tr>
           </table>
