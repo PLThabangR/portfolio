@@ -39,13 +39,18 @@ tr:hover {background-color: coral;}
         color: black;
         margin: 5px;
         padding: 5px;
-        font-weight: bold;
-        
+        font-weight: bold;      
     }
 
     nav a:hover{
         text-decoration: underline;
         color: black;
+    }
+
+    .interest li:hover{
+        text-transform: capitalize;
+        color: black;
+        background-color: white;
     }
     
     .nav-items{
