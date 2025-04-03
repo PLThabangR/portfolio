@@ -18,28 +18,28 @@ tr:hover {background-color: coral;}
     }
     section{
         background-color: white;
-        margin: 30px;
-        padding: 30px;
-        max-width: 900px;
+        margin: auto;
+        margin-top: 5%;
+        padding: 20px;
+        max-width: 800px;
         border-radius: 5px;
-        text-align: center;
-        justify-content: center;
+       text-align: center;
+        box-shadow: 0 0 10px black;
 
     }
 
     nav{
        display: flex;
        flex-direction: row; 
-        color: white;
-        margin: 10px;
-        padding: 10px;
        align-items: center;
-     
-        background-color: white;
+    background-color: white;
     }
     nav a{
         text-decoration: none;
         color: black;
+        margin: 5px;
+        padding: 5px;
+        font-weight: bold;
         
     }
 
@@ -53,11 +53,11 @@ tr:hover {background-color: coral;}
         flex-direction: row;
         gap: 10px;
         list-style: none;
-        text-align: center;
+       
     }
 
     h2{
-        color:  wheat;
+        color:  black;
         text-align: center;
     }
 
@@ -99,3 +99,53 @@ tr:hover {background-color: coral;}
         background-color: green
         
     }
+
+    .media-menu{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        padding:2px;
+        
+    }
+
+    @media (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+
+        .media-menu{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+            padding:2px;
+          
+      }
+
+
+    }
+
+      img{
+        display: block;
+        width: 80%;
+        margin: 10px;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px black;
+        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+      }
+
+      img:hover{
+        transform: scale(1.02);
+        box-shadow: 0 5px 5px black ;
+      }
+
+      video{
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px black;
+        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+
+      }
+
+      
