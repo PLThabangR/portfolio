@@ -28,23 +28,28 @@ tr:hover {background-color: coral;}
 
     }
 
-    nav{
+    .nav-container{
        display: flex;
-       flex-direction: row; 
-       align-items: center;
-    background-color: white;
+       flex-flow: row wrap; 
+       justify-content: stretch;
+    background-color: #2b2d42;
     }
-    nav a{
+.nav-container a{
+        display: inline-block;
         text-decoration: none;
-        color: black;
-        margin: 5px;
-        padding: 5px;
-        font-weight: bold;      
-    }
+        color: white;
+        margin: 0 25px;
+        padding: 25px;
+        text-align: center;
+        font-weight: bold;
 
+    }
+    nav li{
+        list-style: none;
+    }
     nav a:hover{
         text-decoration: underline;
-        color: black;
+        color: lightsteelblue;
     }
 
     .interest li:hover{
@@ -53,13 +58,7 @@ tr:hover {background-color: coral;}
         background-color: white;
     }
     
-    .nav-items{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        list-style: none;
-       
-    }
+   
 
     h2{
         color:  black;
@@ -106,10 +105,17 @@ tr:hover {background-color: coral;}
     }
 
     .media-menu{
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-        padding:2px;
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px;
         
+    }
+    img{
+        border: 0;
     }
 
     @media (max-width: 600px) {
@@ -117,20 +123,43 @@ tr:hover {background-color: coral;}
           background-color: lightblue;
         }
 
-        .media-menu{
+        /* .media-menu{
             display: grid;
             grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
             padding:2px;
           
-      }
+      } */
 
+      .nav-container{
+        display: flex;
+        flex-flow: column wrap; 
+        justify-content: stretch;
+     background-color: #2b2d42;
+     }
+
+     .footer-container{
+        display: flex;
+        flex-flow: column wrap; 
+        justify-content: center;
+        color:white;
+     background-color: #2b2d42;
+     }
+
+     .footer-container ul li{
+        list-style: none;
+     }
+
+     .footer-container ul li a{
+        color:aquamarine
+     }
+    
 
     }
 
       img{
         display: block;
         width: 80%;
-        margin: 10px;
+        margin: 10px auto;
         max-width: 400px;
         border-radius: 10px;
         box-shadow: 0 5px 5px black;
@@ -153,4 +182,21 @@ tr:hover {background-color: coral;}
 
       }
 
-      
+     
+
+      .footer-container{
+        display: flex;
+        flex-flow: column wrap; 
+        justify-content: center;
+        text-align: center;
+        color:white;
+     background-color: #2b2d42;
+     }
+
+     .footer-container ul li{
+        list-style: none;
+     }
+
+     .footer-container ul li a{
+        color:aquamarine
+     }    
